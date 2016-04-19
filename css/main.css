@@ -10,10 +10,20 @@ body {
     justify-content: center;
 }
 
-#canvas {
+#backdrop {
     width:80%;
     height:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fdb927; /* colorname: 'my sin' */
-    background-color: #006bb6; /* colorname: 'my sin' */
+    /*
+    background-color: #006bb6; */
+    /* colorname: 'my sin' */
     /* #006BB6 will be used as the primary text color */
+}
+
+#bpm {
+    color: #006bb6;
+    font-size: 10vw;
 }
