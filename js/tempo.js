@@ -1,8 +1,8 @@
-let beatHistory = [];       // stores the times the drum was kicked betwen beats
-let bpm = 0;                // stores beats per minute estimate
-let BPM_INDICATOR;
-const ESC = 27;             // press ESC to reset the bpm
-const USE_AT_MOST = 2;      // the max number of past beats to consider for bpm calculation
+var beatHistory = [];       // stores the times the drum was kicked betwen beats
+var bpm = 0;                // stores beats per minute estimate
+var BPM_INDICATOR;
+var ESC = 27;             // press ESC to reset the bpm
+var USE_AT_MOST = 2;      // the max number of past beats to consider for bpm calculation
 
 
 /**
@@ -14,9 +14,9 @@ function calcBPM() {
   if (!beatHistory || beatHistory.length < 2) {
     return undefined;
   }
-  const len = beatHistory.length;
-  const use = Math.min(USE_AT_MOST, len - 1);
-  const timePerBeat = (beatHistory[len - 1] - beatHistory[len - 1 - use]) / use;
+  var len = beatHistory.length;
+  var use = Math.min(USE_AT_MOST, len - 1);
+  var timePerBeat = (beatHistory[len - 1] - beatHistory[len - 1 - use]) / use;
   return (1 / timePerBeat) * 1000 * 60;
 }
 
