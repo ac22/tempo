@@ -41,5 +41,6 @@ function keyEventHandler(e) {
 function init() {
   window.addEventListener('keydown', keyEventHandler);
   window.addEventListener('mousedown', addBeat);
+  window.addEventListener('touchstart', addBeat);
   BPM_INDICATOR = document.querySelector('#bpm');
 }
