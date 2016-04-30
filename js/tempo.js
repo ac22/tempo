@@ -38,8 +38,8 @@ function keyEventHandler(e) {
   }
 }
 
-(function init() {
+function init() {
   window.addEventListener('keydown', keyEventHandler);
   window.addEventListener('mousedown', addBeat);
   BPM_INDICATOR = document.querySelector('#bpm');
-}());
+}
