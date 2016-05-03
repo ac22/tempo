@@ -21,7 +21,7 @@ function calcBPM() {
 }
 
 function addBeat() {
-  beatHistory.push(Date.now());
+  beatHistory.push(performance.now());
   bpm = calcBPM(beatHistory, USE_AT_MOST);
   if (bpm) {
     bpm = Math.round(bpm);
