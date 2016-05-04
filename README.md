@@ -3,3 +3,5 @@
 
 To enter a beat, either click the mouse or press any key besides 'Esc'.
 The 'Esc' key will reset the program.
+
+[Live example](achandran.github.io.tempo)
